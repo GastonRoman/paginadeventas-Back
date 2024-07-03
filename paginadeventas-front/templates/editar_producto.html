@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/ingresar_producto.css">
+    <link rel="stylesheet" href="../css/tabla_productos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <section>
+
+            <div class="container-form">
+                <form>
+                   
+                    <div>
+                        <label for="id">ID</label>
+                        <input type="number" name="id" id="id" disabled>
+                    </div>
+            
+                    <div>
+                        <label for="producto">Producto:</label>
+                        <input type="text" name="producto" id="producto">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="imagen">Imagen:</label>
+                        <input type="text" name="imagen" id="imagen">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="descripcion">Descripcion:</label>
+                        <input type="text" name="descripcion" id="descripcion">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="categoria">Categoria:</label>
+                        <input type="text" name="categoria" id="categoria" disabled>
+                    </div>
+
+                    <div class="entrada">
+                        <label for="precio">Precio:</label>
+                        <input type="number" name="precio" id="precio">
+                    </div>
+
+                    <button class="modificar" type="button" onclick="modificar()">Modificar</button>
+                </form>
+          
+          
+              </div>
+
+        </section>
+    </main>
+
+    
+    <footer></footer>
+
+    <script src="../js/editar_producto.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/datos_editar.js"></script>
+</body>
+</html>

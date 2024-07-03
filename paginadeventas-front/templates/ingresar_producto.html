@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/ingresar_producto.css">
+    <link rel="stylesheet" href="../css/tabla_productos.css">
+    <title>Registrar</title>
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+    <main>
+
+        <section>
+            <div class="container-form">
+
+                <form action="">
+                    <div class="entrada">
+                        <label for="producto">Producto:</label>
+                        <input type="text" name="producto" id="producto">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="imagen">Imagen:</label>
+                        <input type="text" name="imagen" id="imagen">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="descripcion">Descripcion:</label>
+                        <input type="text" name="descripcion" id="descripcion">
+                    </div>
+
+                    <!-- <div class="entrada">
+                        <label for="categoria">Categoria:</label>
+                        <input type="text" name="categoria" id="categoria">
+                    </div> -->
+
+                    <div class="entrada">
+                        <label for="categoria">Categoría:</label>
+                        <select name="categoria" id="categoria">
+                            <option value="destacados">Destacados</option>
+                            <option value="hogar">Hogar</option>
+                            <option value="accesorios">Accesorios</option>
+                            <option value="indumentaria">Indumentaria</option>
+                            <option value="fitness">Fitness</option>
+                        </select>
+                    </div>
+
+                    <div class="entrada">
+                        <label for="precio">Precio:</label>
+                        <input type="number" name="precio" id="precio">
+                    </div>
+
+                    <div class="entrada">
+                        <button class="modificar" type="button" onclick="guardar()">Guardar</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+    <script src="../js/ingresar_producto.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+
+</html>
