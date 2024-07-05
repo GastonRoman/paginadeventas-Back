@@ -2,10 +2,14 @@
     margin: 0%;
     padding: 0%;
 }
-
+:root {
+    --primary-color: #4353df;
+    --background-color: #afbed6;
+    --dark-color: #151515;
+}
 .container-form{
-    background: radial-gradient(circle, #ffcccc, #ff9999);
-    height: 100vh;
+    background: linear-gradient(var(--background-color), var(--primary-color));
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,167 +17,69 @@
 }
 
 form{
-    background-color: #001F3F;
-    width: 30vw;
-    height: 50vh;
-    border-radius: 3vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
 }
 
 .entrada{
     margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.entrada input, .entrada #categoria{
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+
 label{
-    font-size: 2vw;
+    font-size: 1.2em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: aliceblue;
 }
 
-button {
-    padding: 0.2vw 0.3vh;
-    font-size: 1.6vw;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #ff9999;
-    color: #ffffff;
-    border: none;
-    border-radius: 0.5vw;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #ff6666;
+form button{
+ width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  cursor: pointer;
 }
-
-.modificar{
-    color: #f2f2f2;
-    margin-right: 2vh;
-    background-color: #ff9999; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 0.5vw 3vh; /* Relleno interno */
-    border: none; /* Quita el borde */
-    border-radius: 2vw; /* Borde redondeado */
-    text-align: center; /* Alineación del texto */
-    text-decoration: none; /* Quita el subrayado predeterminado */
-    display: inline-block; /* Mostrar como bloque en línea */
-    font-size: 1vw; /* Tamaño de fuente */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  
+form button:hover {
+    background-color: #4353df;
 }
 
 @media screen and (max-width:768px){
-    form{
-        background-color: #001F3F;
-        width: 50vw;
-        height: 50vh;
-        border-radius: 3vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    label{
-        font-size: 4vw;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: aliceblue;
-    }
-
-    a{
-        font-size: 4vw;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-decoration: none;
-        color: aliceblue;
-        
-    }
-
-    .modificar{
-        color: #f2f2f2;
-        margin-right: 2vh;
-        background-color: #ff9999; /* Color de fondo */
-        color: white; /* Color del texto */
-        padding: 0.5vw 3vh; /* Relleno interno */
-        border: none; /* Quita el borde */
-        border-radius: 2vw; /* Borde redondeado */
-        text-align: center; /* Alineación del texto */
-        text-decoration: none; /* Quita el subrayado predeterminado */
-        display: inline-block; /* Mostrar como bloque en línea */
-        font-size: 3vw; /* Tamaño de fuente */
-        cursor: pointer; /* Cambia el cursor al pasar el ratón */
-    }
+  
+   
 }
 
 @media screen and (max-width:425px){
-    form{
-        background-color: #001F3F;
-        width: 80vw;
-        height: 40vh;
-        border-radius: 3vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    label{
-        font-size: 6vw;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: aliceblue;
-    }
-
-    a{
-        font-size: 6vw;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-decoration: none;
-        color: aliceblue;
-        
-    }
-
-    .modificar{
-        color: #f2f2f2;
-        margin-right: 2vh;
-        background-color: #ff9999; /* Color de fondo */
-        color: white; /* Color del texto */
-        padding: 0.5vw 3vh; /* Relleno interno */
-        border: none; /* Quita el borde */
-        border-radius: 2vw; /* Borde redondeado */
-        text-align: center; /* Alineación del texto */
-        text-decoration: none; /* Quita el subrayado predeterminado */
-        display: inline-block; /* Mostrar como bloque en línea */
-        font-size: 5vw; /* Tamaño de fuente */
-        cursor: pointer; /* Cambia el cursor al pasar el ratón */
-    }
+    
 }
 
 
 @media screen and (max-width:320px){
-    form{
-        background-color: #001F3F;
-        width: 80vw;
-        height: 50vh;
-        border-radius: 3vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    label{
-        font-size: 6vw;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: aliceblue;
-    }
-
-    a{
-        font-size: 6vw;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-decoration: none;
-        color: aliceblue;
-        
-    }
+    
 }
 

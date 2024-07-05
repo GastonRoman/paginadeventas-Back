@@ -3,17 +3,20 @@
     padding: 0%;
     
 }
-
+:root {
+    --primary-color: #4353df;
+    --background-color: #afbed6;
+    --dark-color: #151515;
+}
 .container{
-    background: radial-gradient(circle, #ffcccc, blue);
-    height: auto;
+    background: linear-gradient(var(--background-color), var(--primary-color));
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
 }
-
 
 table {
     background-color: #001F3F;
@@ -40,7 +43,7 @@ th {
     color: #001F3F;
 }
 
-a{
+table a{
     text-decoration: none;
     color: #dddddd;
 }
@@ -50,23 +53,11 @@ td:hover{
     color:#001F3F
 }
 
-a:hover{
+table a:hover{
     background-color: #f2f2f2;
     color:#001F3F
 }
 
-.menu{
-    text-decoration: none;
-    background-color: #001F3F;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2vw;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2vw;
-
-}
 
 button{
     
@@ -102,6 +93,8 @@ button{
 
 .nuevo{
     color: #f2f2f2;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     margin-right: 2vh;
     background-color: #001F3F50; /* Color de fondo */
     color: white; /* Color del texto */
@@ -114,7 +107,11 @@ button{
     font-size: 1vw; /* Tamaño de fuente */
     cursor: pointer; /* Cambia el cursor al pasar el ratón */
 }
-
+.nuevo:hover{
+    background-color: var(--primary-color);
+    padding: 0.5vw 3vh;
+    transition: background-color 0.3s ease;
+}
 
 img{
     width: 6vw;
