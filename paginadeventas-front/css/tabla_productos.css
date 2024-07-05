@@ -5,7 +5,7 @@
 }
 
 .container{
-    background: radial-gradient(circle, #ffcccc, #ff9999);
+    background: radial-gradient(circle, #ffcccc, blue);
     height: auto;
     display: flex;
     flex-direction: column;
